@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">VolviFinalApp</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="Login">Login</string>
+    <string name="signout">Sign out</string>
+    <string name="register">Become a Volvi Visitor</string>
+    <string name="post_title">Post Title</string>
+    <string name="post_description">Post Description...</string>
+    <string name="post_title_description_details"><u>Description</u></string>
+    <string name="submitText">Submit</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="accountType">Type Vollunteer</string>
+    <string name="age">Data of Birth</string>
+    <string name="confirPass">Confirm Password</string>
+    <string name="selectVolunteerRegister">Click Register if you want to become a volunteer</string>
+    <string name="selectHomeCare">Register a Home Care</string>
+    <string name="homeCareRegister">Become Volvi Home</string>
+    <string name="saveDate">Save Event Date</string>
+    <string name="makeyourDate">Make Your Date</string>
+    <string name="homeCare">Home Care Name</string>
+    <string name="typeHomeCare">Type Home Care</string>
+    <string name="addEvent">Add Event</string>
+    <string name="eventTitle">Event Title</string>
+    <string name="desc">Description</string>
+    <string name="date">DD/MM/YYYY</string>
+    <string name="applyForEvent">Apply For This Event</string>
+    <string name="fullName">Full Name</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="tellUsAboutYou">Tell Us About You</string>
+    <string name="aboutYou">Tell us about you</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">Password too short or does not match</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="title_activity_post_details">PostDetailsActivity</string>
+    <string name="eventDescription">Event\'s Description...</string>
+    <string name="toString">to</string>
+    <string name="fromTime">00:00</string>
+    <string name="attendEvent">Attend Event</string>
+
+    <string name="address">Address</string>
+
+    <string name="toTime">00:00</string>
+    <string name="askVetting">Vetting Required: </string>
+
+</resources>

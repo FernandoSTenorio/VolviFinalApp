@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_add"
+        android:icon="@drawable/ic_action_add"
+        android:title="Add Post"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action-event"
+        android:title="List of Events"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action-calendar"
+        android:title="Calendar"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_signout"
+        android:title="Signout"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_search"
+        android:title="Search"
+        android:icon="@drawable/ic_action_search"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView"
+        />
+
+</menu>

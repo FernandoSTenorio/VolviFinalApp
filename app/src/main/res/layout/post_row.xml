@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:id="@+id/postPanelList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            android:layout_width="219dp"
+            android:layout_height="94dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileImageView"
+                android:layout_width="84dp"
+                android:layout_height="63dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:src="@mipmap/add_btn"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/postUserList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_weight="60"
+                android:padding="10dp"
+                android:text="User"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/postTextList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:paddingLeft="15dp"
+
+                android:paddingTop="15dp"
+                android:paddingRight="15dp"
+                android:text="Post Text List" />
+
+            <ImageView
+                android:id="@+id/postImageList"
+                android:layout_width="match_parent"
+                android:layout_height="308dp"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="15dp"
+                android:cropToPadding="true"
+                android:fadingEdge="horizontal|vertical|none"
+                android:scaleType="fitXY"
+                android:src="@mipmap/add_btn"
+                android:visibility="visible" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/countersContainer"
+                    layout="@layout/counters_panel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="20" />
+
+                <Button
+                    android:id="@+id/btnSeeMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:layout_marginLeft="230dp"
+                    android:background="@color/cardview_light_background"
+                    android:text="See more..."
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/postTitleList"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Post Title"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/timestampList"
+                android:layout_width="166dp"
+                android:layout_height="wrap_content"
+
+                android:padding="10dp"
+                android:text="Date Added" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

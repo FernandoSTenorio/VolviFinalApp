@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundPostrow"
+    tools:context=".Activities.PostDetailsActivity">
+
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="651dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/eventTitleDetails"
+                    android:layout_width="187dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/eventTitle"
+                    android:textColor="@color/colorPurpleRed"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="217dp"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnReturn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="130dp"
+                        android:layout_weight="20"
+                        android:text="Return" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/eventImageViewDetails"
+                android:layout_width="319dp"
+                android:layout_height="192dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@mipmap/add_btn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/eventDetailUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:padding="10dp"
+                android:text="Posted by User"
+                android:textColor="@color/colorPurpleRed"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/eventDescriptionDetailsRow"
+            android:layout_width="348dp"
+            android:layout_height="119dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/input_outline"
+            android:padding="10dp"
+            android:text="Event description"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/eventDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                android:textColor="@color/colorPurpleRed"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/startFrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/fromTime"
+                android:textColor="@color/colorPurpleRed"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/toTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="to"
+                android:textColor="@color/colorPurpleRed"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/endTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/toTime"
+                android:textColor="@color/colorPurpleRed"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/vettintxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:text="@string/askVetting"
+                android:textColor="@color/colorPurpleRed"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/vetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:text="@string/askVetting"
+                android:textColor="@color/colorPurpleRed"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="311dp"
+            android:layout_height="89dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/shadow"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/top_shadow" />
+
+            <Button
+                android:id="@+id/sendButton"
+                android:layout_width="276dp"
+                android:layout_height="52dp"
+                android:layout_alignTop="@+id/newCommentContainer"
+                android:layout_alignEnd="@+id/newCommentContainer"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/oval"
+                android:minWidth="0dp"
+                android:paddingRight="16dp"
+                android:text="@string/attendEvent"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

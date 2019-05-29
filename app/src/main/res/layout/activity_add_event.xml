@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/backgroundPostrow"
+    tools:context=".Activities.AddEventActivity">
+
+
+    <ImageButton
+        android:id="@+id/eventImage"
+        android:layout_width="332dp"
+        android:layout_height="188dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:adjustViewBounds="true"
+        android:background="@mipmap/imageadd"
+        android:cropToPadding="true"
+        android:foregroundGravity="center_horizontal"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/imageadd" />
+
+    <EditText
+        android:id="@+id/addEventTitle"
+        android:layout_width="233dp"
+        android:layout_height="47dp"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="@string/eventTitle"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/colorPurpleRed"
+        android:textColorHint="@color/colorPurpleRed"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventImage" />
+
+    <EditText
+        android:id="@+id/addDescEvent"
+        android:layout_width="344dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/input_outline"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/eventDescription"
+        android:paddingLeft="20dp"
+        android:inputType="textMultiLine"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorPurpleRed"
+        android:textColorHint="@color/colorPurpleRed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addEventTitle"
+        app:layout_goneMarginLeft="10dp" />
+
+    <EditText
+        android:id="@+id/setDateEvent"
+        android:layout_width="123dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="@string/date"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPurpleRed"
+        android:textColorHint="@color/colorPurpleRed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addDescEvent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="332dp"
+        android:layout_height="73dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="76dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setDateEvent">
+
+        <EditText
+            android:id="@+id/fromTime"
+            android:layout_width="118dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="@string/fromTime"
+            android:inputType="time"
+            android:textAlignment="center"
+            android:textColor="@color/colorPurpleRed"
+            android:textColorHint="@color/colorPurpleRed" />
+
+        <TextView
+            android:id="@+id/to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toString"
+            android:textColor="@color/colorPurpleRed"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/toTime"
+            android:layout_width="118dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="140dp"
+            android:ems="10"
+            android:hint="@string/toTime"
+            android:inputType="time"
+            android:textAlignment="center"
+            android:textColor="@color/colorPurpleRed"
+            android:textColorHint="@color/colorPurpleRed" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/askVettin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/askVetting"
+        android:textColor="@color/colorPurpleRed"
+        android:textColorHint="@color/colorPurpleRed"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/addEventButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/vetin_spinner"
+        android:layout_width="123dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/input_outline"
+        android:textAlignment="center"
+        android:entries="@array/vetin_array"
+        app:layout_constraintBottom_toTopOf="@+id/addEventButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/askVettin"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
+    <Button
+        android:id="@+id/addEventButton"
+        android:layout_width="179dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/oval_blue"
+        android:text="@string/addEvent"
+        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#060707</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#F5F3F4</color>
+    <color name="grayColor">#8f8f8f</color>
+    <color name="purpleColor">#AE39C6</color>
+    <color name="purpleColorBright">#72B4D8</color>
+    <color name="babyBlue">#CFE2F3</color>
+    <color name="wineRed">#980000</color>
+    <color name="toolBar">#FFD966</color>
+    <color name="colorBlack">#FF060707</color>
+    <color name="colorPurpleRed">#731D4C</color>
+    <color name="secondary_light">#979797</color>
+    <color name="like_icon_activated">#FF5252</color>
+    <color name="icons_counter_color">#828181</color>
+    <color name="circle_image_shadow">#8b8b8b</color>
+    <color name="backgroundPink">#40731D4c</color>
+    <color name="backgroundPostrow">#10731D4c</color>
+    <color name="blueButton">#049DD9</color>
+</resources>
