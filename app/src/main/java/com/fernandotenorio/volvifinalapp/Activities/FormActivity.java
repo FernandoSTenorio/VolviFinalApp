@@ -159,7 +159,7 @@ public class FormActivity extends AppCompatActivity {
                                             mailSettings.setSandboxMode(sandBoxMode);
 
                                             //For the college tests purpose I decide to keep this api to facilitate the usage during tests.
-                                            SendGrid sg = new SendGrid("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");
+                                            SendGrid sg = new SendGrid("");
                                             Request request1 = new Request();
 
                                             Response response1;
